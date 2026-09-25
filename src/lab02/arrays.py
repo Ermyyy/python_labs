@@ -2,7 +2,18 @@
 def min_max(nums):
     if not nums:
         raise ValueError
-    return min(nums), max(nums)
+
+    mn = nums[0]
+    mx = nums[0]
+
+    for x in nums:
+        if x < mn:
+            mn = x
+
+        if x > mx:
+            mx = x
+
+    return mn, mx
 
 print(min_max([3, -1, 5, 5, 0]))
 print(min_max([42]))

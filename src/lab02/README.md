@@ -15,7 +15,17 @@ def min_max(nums):
     if not nums:
         raise ValueError
 
-    return min(nums), max(nums)
+    mn = nums[0]
+    mx = nums[0]
+
+    for x in nums:
+        if x < mn:
+            mn = x
+
+        if x > mx:
+            mx = x
+
+    return mn, mx
 ```
 
 ![arrays](../../images/lab02/arrays1.png)
