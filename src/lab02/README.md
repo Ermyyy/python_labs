@@ -18,7 +18,7 @@ def min_max(nums):
     return min(nums), max(nums)
 ```
 
-![arrays](../../images/arrays1.png)
+![arrays](../../images/lab02/arrays1.png)
 
 ### unique_sorted
 
@@ -29,7 +29,7 @@ def unique_sorted(nums):
     return sorted(set(nums))
 ```
 
-![arrays](../../images/arrays2.png)
+![arrays](../../images/lab02/arrays2.png)
 
 ### flatten
 
@@ -49,7 +49,7 @@ def flatten(mat: list[list | tuple]) -> list:
     return res
 ```
 
-![arrays](../../images/arrays3.png)
+![arrays](../../images/lab02/arrays3.png)
 
 ---
 
@@ -82,7 +82,7 @@ def transpose(mat: list[list[float | int]]) -> list[list]:
     return res
 ```
 
-![matrix](../../images/matrix1.png)
+![matrix](../../images/lab02/matrix1.png)
 
 ### Функция row_sums
 
@@ -102,7 +102,7 @@ def row_sums(mat: list[list[float | int]]) -> list[float]:
     return res
 ```
 
-![matrix](../../images/matrix2.png)
+![matrix](../../images/lab02/matrix2.png)
 
 ### Функция col_sums
 
@@ -128,7 +128,7 @@ def col_sums(mat: list[list[float | int]]) -> list[float]:
 ```
 
 
-![matrix](../../images/matrix3.png)
+![matrix](../../images/lab02/matrix3.png)
 
 ---
 
@@ -162,4 +162,4 @@ def format_record(rec: tuple[str, str, float]) -> str:
 ```
 
 
-![tuples](../../images/tuples.png)
+![tuples](../../images/lab02/tuples.png)
