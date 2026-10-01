@@ -21,7 +21,14 @@ print(min_max([-5, -2, -9]))
 print(min_max([1.5, 2, 2.0, -3.1]))
 
 def unique_sorted(nums):
-    return sorted(set(nums))
+    res = list(set(nums))
+    for i in range(len(res)):
+        for j in range(len(res)-1):
+            if res[j] > res[j+1]:
+                t = res[j]
+                res[j] = res[j+1]
+                res[j+1] = t
+    return res
 
 print(unique_sorted([3, 1, 2, 1, 3]))
 print(unique_sorted([]))
@@ -30,11 +37,14 @@ print(unique_sorted([1.0, 1, 2.5, 2.5, 0]))
 
 def flatten(mat: list[list | tuple]) -> list:
     res = []
+
     for x in mat:
         if type(x) != list and type(x) != tuple:
             raise TypeError
+
         for el in x:
             res.append(el)
+
     return res
 
 print(flatten([[1, 2], [3, 4]]))
