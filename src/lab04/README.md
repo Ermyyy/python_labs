@@ -126,4 +126,4 @@ for word, count in top_n(freq, 5):
 
 ### Файл не найден
 
-![](../../images/lab04/l-b)
+![](../../images/lab04/l-b.png)
