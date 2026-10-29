@@ -212,4 +212,4 @@ Carlos,19,Kazan
 
 **Выход (XLSX):**
 
-![Результат CSV в Excel](images/lab05_b.png)
+![Результат CSV в Excel](../../images/lab05/b05.png)
